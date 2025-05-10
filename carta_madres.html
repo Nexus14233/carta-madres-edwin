@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta para mis dos Madres lindas</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #800080; /* morado */
+        }
+
+        .btn {
+            background-color: #ffc0cb; /* rosado */
+            color: #d30cc9;
+            padding: 15px 30px;
+            margin: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffb6c1;
+        }
+
+        .carta {
+            display: none;
+            margin-top: 30px;
+            border: 2px solid #daa520; /* dorado */
+            border-radius: 10px;
+            padding: 25px;
+            background-color: #fff8dc;
+            color: #4b0082;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Feliz Día de la Madres a mis dos madres</h1>
+    <p>algo sencillo, pero trabajo honesto :-</p>
+
+    <button class="btn" onclick="mostrarCarta('yancy')">Carta para madre, mi colochita</button>
+    <button class="btn" onclick="mostrarCarta('maria')">Carta para mi segunda madre Maria, mi viejita</button>
+
+    <div id="yancy" class="carta">
+        <h2>Para mi querida mami Yancy</h2>
+        <p>Gracias por ser la mejor madre del mundo. Tu amor, tu fuerza y tu ternura me han guiado en cada paso. Eres mi ejemplo, mi reina y mi refugio. Te amo con todo mi corazón.</p>
+        <p><strong>gracias por guiarme siempre en tus caminos, darme lo mejor siempre, darlo todo por mi hermana y yo, gracias a usted no nos falta nada, gracias por tanto, la queremos mucho.</strong></p>
+    </div>
+
+    <div id="maria" class="carta">
+        <h2>Para mi segunda mamá María</h2>
+        <p>Feliz dia de las madres mi viejita linda, gracias por todos sus consejos, sus anecdotas, darme sus sabiduria, gracias por convertirme en el joven que soy hoy en dia, la quiero muchisimo, Feliz dia de la madre mi viejita.</p>
+        <p><strong>la queremos mucho sus 2 nietos.</strong></p>
+    </div>
+
+    <script>
+        function mostrarCarta(nombre) {
+            document.getElementById("yancy").style.display = "none";
+            document.getElementById("maria").style.display = "none";
+            document.getElementById(nombre).style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
